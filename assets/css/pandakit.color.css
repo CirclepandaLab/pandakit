@@ -1,5 +1,7 @@
+/* Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
+*/
 /* Compiled Modern Colors and names */
-
+/*Background color*/
 .white { background-color: #ffffff; }
 .black { background-color: #000000; }
 .light-grey { background-color: #f2F3f7; }
@@ -13,3 +15,18 @@
 .blue-water { background-color: #39a0ca; }
 .yellow { background-color: #ffde22; }
 .grey-blue-leaf { background-color: #4f5f76; }
+
+/*text color*/
+.white-text { color: #ffffff; }
+.black-text { color: #000000; }
+.light-grey-text { color: #f2F3f7; }
+.tan-text { color: #fceed1; }
+.sand-tan-text { color: #e1b382; }
+.sand-tan-shadow-text { color: #c89666; }
+.coral-pink-text { color: #ff5e6c; }
+.sleuthe-yellow-text { color: #feb300; }
+.pink-text { color: #ffaaab; }
+.grassy-green-text { color: #9bc400; }
+.blue-water-text { color: #39a0ca; }
+.yellow-text { color: #ffde22; }
+.grey-blue-leaf-text { color: #4f5f76; }

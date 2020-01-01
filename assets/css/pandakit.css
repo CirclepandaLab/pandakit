@@ -26,6 +26,10 @@ body, html { color: #38394B;
 p {
 }
 
+h1,h2,h3,h4,h5,h6{
+  
+}
+
 /*vertical split screen*/
 .splitv {
   height: 100%;

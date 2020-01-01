@@ -1,6 +1,10 @@
 /* Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
 */
 /*under construction*/
+
+html {
+}
+
 body {
   font-family: Arial, Times New Roman, Times, serif, sans-serif, Georgia, Palatino Linotype;
   color:;
@@ -10,4 +14,34 @@ body {
   font-weight: ;
   font-style: ;
 
+}
+
+p {
+}
+
+/*vertical split screen*/
+.splitv {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.leftv {
+  left: 0;
+  background-color:#FFFFFF;
+}
+
+.rightv {
+  right: 0;
+  background-color:#000000;
+}
+
+.centerv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ transform: translate(-50%,-50%);
+  text-align: center;
 }

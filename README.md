@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://github.com/CirclepandaLab/pandakit">
-    <img src="https://raw.githubusercontent.com/CirclepandaLab/circlepanda-docs/master/Logo/logosocial.png" alt="Pandakit logo" width="130" height="130">
+    <img src="https://raw.githubusercontent.com/CirclepandaLab/pandakit/master/logo.png" alt="Pandakit logo" width="130" height="130">
   </a>
 </p>
 
@@ -52,6 +52,11 @@ Within the download you'll find the following directories and files, logically g
 pandakit/
 └── assets/
     ├── css/
+    │   ├── pandakit.button.css
+    │   ├── pandakit.color.css
+    │   ├── pandakit.layout.css
+    │   ├── pandakit.media.css
+    │   ├── pandakit.typography.css
     │   ├── pandakit.css
     │   └── pandakit.min.css
     └── js/

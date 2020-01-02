@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://github.com/CirclepandaLab/pandakit">
-    <img src="https://raw.githubusercontent.com/CirclepandaLab/circlepanda-docs/master/Logo/logosocial.png" alt="Pandakit logo" width="130" height="130">
+    <img src="https://raw.githubusercontent.com/CirclepandaLab/pandakit/master/logo.png" alt="Pandakit logo" width="130" height="130">
   </a>
 </p>
 

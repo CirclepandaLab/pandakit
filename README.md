@@ -10,7 +10,7 @@
 <p align="center">
   Pandakit is a framework design for 21st Century web
   <br>
-  <a href="https://getbootstrap.com/docs/4.3/"><strong> -- Learn more -- </strong></a>
+  <a href="#"><strong> -- Learn more -- </strong></a>
   <br>
   <br>
   <a href="mailto:hellopandakit@gmail.com

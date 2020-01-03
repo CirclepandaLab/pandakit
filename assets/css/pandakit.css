@@ -82,3 +82,72 @@ h1,h2,h3,h4,h5,h6{
   transform: translate(-50%, -50%);
   color: #ffffff;
 }
+
+/*cards*/
+.card {
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.9s;
+  border-radius: 5px;
+  width: 50%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+/*flip card normal and 3d*/
+.flip-card-3d {
+ 
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.flip-card {
+ 
+  width: 300px;
+  height: 300px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  color: black;
+  transform: rotateY(180deg);
+}
+/*flip card super rotation*/
+.flip-card-inner-rotation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.flip-card:hover .flip-card-inner-rotation {
+  transform: rotateY(550deg);
+}

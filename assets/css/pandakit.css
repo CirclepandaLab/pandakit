@@ -84,6 +84,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*cards*/
+
 .card {
   box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
   transition: 0.9s;
@@ -128,13 +129,15 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .flip-card-front {
-  background-color: #bbb;
   color: black;
 }
 
 .flip-card-back {
   color: black;
   transform: rotateY(180deg);
+}
+.flip-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 /*flip card super rotation*/
 .flip-card-inner-rotation {

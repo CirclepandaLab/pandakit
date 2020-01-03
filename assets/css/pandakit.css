@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque|Slabo+13px&display=swap&subset=latin-ext,vietnamese');
+@import "pandakit.layout.css";
 @import "pandakit.color.css";
+@import "pandakit.button.css";
+@import "pandakit.media.css";
+@import "pandakit.typography.css";
+
+/*
+	font-family: 'Slabo 13px', serif;
+	font-family: 'Darker Grotesque', sans-serif;
+*/
 
 * {
     margin: 0;
@@ -9,6 +19,10 @@
 
 body {
 	margin: 0 auto;
+	font-family: 'Slabo 13px', serif;
 }
 
 body, html { color: #38394B; }
+
+.text-white { color: #ffffff; }
+.text-dark { color: #030015; }

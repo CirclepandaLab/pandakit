@@ -52,6 +52,11 @@ Within the download you'll find the following directories and files, logically g
 pandakit/
 └── assets/
     ├── css/
+    │   ├── pandakit.button.css
+    │   ├── pandakit.color.css
+    │   ├── pandakit.layout.css
+    │   ├── pandakit.media.css
+    │   ├── pandakit.typography.css
     │   ├── pandakit.css
     │   └── pandakit.min.css
     └── js/

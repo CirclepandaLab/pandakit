@@ -12,3 +12,14 @@ body {
 }
 
 body, html { color: #38394B; }
+
+.logo {
+	margin: 20px 40px;
+
+}
+
+h1 {
+	text-transform: uppercase;
+	color: #c89666;
+	font-family: sans-serif;
+}

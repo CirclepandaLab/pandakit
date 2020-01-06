@@ -1,3 +1,9 @@
+/* 
+ * Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
+ * Author : @Precious Tom;
+ * Twitter : @PAniefiok; 
+*/
+/*under construction*/
 @import url('https://fonts.googleapis.com/css?family=Darker+Grotesque|Slabo+13px&display=swap&subset=latin-ext,vietnamese');
 @import "pandakit.layout.css";
 @import "pandakit.color.css";
@@ -15,11 +21,57 @@
     padding: 0;
     outline: 0;
     -webkit-overflow-scrolling: touch;
+  }
+
+body, html { 
+  color: #38394B; 
 }
 
-body {
-	margin: 0 auto;
-	font-family: 'Slabo 13px', serif;
+
+/*vertical split screen*/
+.splitv {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-body, html { color: #38394B; }
+.leftv {
+  left: 0;
+  background-color:#FFFFFF;
+}
+
+.rightv {
+  right: 0;
+  background-color:#000000;
+}
+
+.centerv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+/*Smooth scroll*/
+.smooth-scroll{scroll-behavior: smooth;}
+
+/*hero image*/
+/*use style="background-image:url();" in your div to insert image*/
+.hero-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 560px;
+  position: relative; 
+}
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}

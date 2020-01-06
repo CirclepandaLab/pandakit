@@ -1,6 +1,7 @@
-/* Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
-*/
-/*under construction*/
+/* 
+ * Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
+ * Under Construction
+**/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {...}
@@ -13,6 +14,10 @@
 	.container {
 		width: 750px;
 	}
+	[class*="grid-"] {
+		width: 100%;
+	}
+
 	.grid-sm-1,.grid-sm-2,.grid-sm-3,.grid-sm-4,.grid-sm-5,.grid-sm-6,.grid-sm-7,.grid-sm-8,.grid-sm-9,.grid-sm-10,.grid-sm-11,.grid-sm-12 {
     	float: left;
 	}

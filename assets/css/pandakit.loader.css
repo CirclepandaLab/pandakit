@@ -1,0 +1,134 @@
+/* Loader 1 */
+.loader-1 {
+  height: 48px;
+  width: 48px;
+  color: #5a5a5a;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block; 
+}
+.loader-1::after, .loader-1::before {
+  content: '';
+  height: 0;
+  width: 0;
+  border: inherit;
+  border: 5px solid;
+  border-radius: inherit;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  animation: one  1s linear infinite; 
+}
+.loader-1::before { animation-delay: -0.5s; }
+
+@keyframes one {
+  0% {
+    height: 0;
+    width: 0;
+    left: 20px;
+    top: 20px; }
+  100% {
+    height: 48px;
+    width: 48px;
+    left: -5px;
+    top: -5px;
+    opacity: 0; 
+  } 
+}
+
+/* Loader 2 */
+.loader-2 {
+  height: 48px;
+  width: 48px;
+  color: #5a5a5a;
+  position: relative;
+  display: inline-block;
+  border: 5px solid;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: rotate 1s linear infinite; 
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); } 
+}
+
+/* Loader 3 */
+.loader-3 {
+  height: 48px;
+  width: 48px;
+  color: rgba(90, 90, 90, 0.2);
+  position: relative;
+  display: inline-block;
+  border: 5px solid;
+  border-radius: 50%;
+  border-right-color: #5a5a5a;
+  animation: rotate 1s linear infinite; 
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); } 
+}
+
+/* Loader 4 */
+.loader-4 {
+  height: 48px;
+  width: 48px;
+  color: #5a5a5a;
+  border-radius: 50%;
+  border: 5px solid;
+  position: relative;
+  display: inline-block; 
+}
+.loader-4::after {
+  content: '';
+  height: 25%;
+  width: 0;
+  border-radius: 5px;
+  border: 3px solid;
+  display: block;
+  color: inherit;
+  position: absolute;
+  left: 22px;
+  top: 5px;
+  transform-origin: bottom;
+  animation: two 1s linear infinite; 
+}
+
+@keyframes two {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); } 
+}
+
+/* Loader 5 */
+.loader-5 {
+  height: 48px;
+  width: 48px;
+  color: #5a5a5a;
+  display: inline-block;
+  position: relative;
+  border: 5px solid;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: three 1s linear infinite; 
+}
+.loader-5::after {
+  content: '';
+  height: 40%;
+  width: 40%;
+  display: block;
+  color: inherit;
+  margin: 10px auto;
+  position: relative;
+  border: 5px solid;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: three .5s linear infinite reverse; 
+}
+
+@keyframes three {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); } 
+}

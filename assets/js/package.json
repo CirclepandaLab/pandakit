@@ -1,0 +1,10 @@
+{
+  "name": "pandakit",
+  "version": "1.0.0",
+  "description": "Pandakit is a framework design for 21st Century web",
+  "main": "index.html",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": []
+}

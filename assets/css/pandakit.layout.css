@@ -289,7 +289,7 @@
 }
 
 /*return to the top*/
-.return-to-top {
+#return-to-top {
     position: fixed;
     bottom: 20px;
     right: 1.7%;
@@ -303,37 +303,8 @@
     -moz-border-radius: 35px;
     border-radius: 35px;
     display: none;
+    scroll-behavior: smooth;
 }
-.return-to-top span {
-    color: #fff;
-    margin: 0;
-    position: relative;
-    left: 32%;
-    top: 13px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-.return-to-top:hover {
+#return-to-top:hover {
     background:  #E12B00;
-}
-.return-to-top:hover span {
-    color: #fff;
-    top: 5px;
-}
-.glyphicon{
-    position:relative;
-    top:1px;
-    display:inline-block;
-    font-family:'Glyphicons Halflings';
-    font-style:normal;
-    font-weight:400;
-    line-height:1;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale
-}
-.glyphicon-chevron-up:before{
-    content:"\e113"
 }

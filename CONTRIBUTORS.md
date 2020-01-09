@@ -1,1 +1,3 @@
+-[@prezine](https://github.com/prezine)
+-[@Chaitanyassr](https://github.com/Chaitanyassr)
 -[@olukaz](https://github.com/olukaz)

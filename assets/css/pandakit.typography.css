@@ -2,15 +2,20 @@
  * Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
  * Under Construction
 **/
+
+/*
+	font-family: 'Open Sans', sans-serif;
+ 	font-family: 'Roboto Mono', monospace;
+*/
 h1, h2, h3, h4, h5, h6, strong, b, i, p {
-	font-family: 'Slabo 13px', serif;
+	font-family: 'Open Sans', sans-serif;
 }
 h1, h2, h3, h4, h5, h6, strong {
 	font-weight: 600;
 }
 p {
 	font-size: 16px;
-	font-family: 'Slabo 13px', serif;
+	font-family: 'Open Sans', sans-serif;
 }
 .text-center,
 .text-left,

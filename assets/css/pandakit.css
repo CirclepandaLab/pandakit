@@ -4,16 +4,18 @@
  * Twitter : @PAniefiok; 
 */
 /*under construction*/
-@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque|Slabo+13px&display=swap&subset=latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono&display=swap');
 @import "pandakit.layout.css";
 @import "pandakit.color.css";
 @import "pandakit.button.css";
 @import "pandakit.media.css";
 @import "pandakit.typography.css";
+@import "pandakit.loader.css";
+@import "pandakit.input.css";
 
 /*
-	font-family: 'Slabo 13px', serif;
-	font-family: 'Darker Grotesque', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 */
 
 * {
@@ -27,6 +29,27 @@ body, html {
   color: #38394B; 
 }
 
+header {
+  display: block;
+  height: auto;
+  min-height: 70px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1001;
+  transition: box-shadow cubic-bezier(.165, .84, .44, 1) .25s;
+}
+
+header.sticky {
+  position: fixed;
+}
+
+div.form {
+  display: block;
+  height: auto;
+  width: 40%;
+  margin: 10% 30%;
+}
 
 /*vertical split screen*/
 .splitv {

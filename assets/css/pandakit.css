@@ -1,16 +1,21 @@
-/* Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
+/* 
+ * Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
+ * Author : @Precious Tom;
+ * Twitter : @PAniefiok; 
 */
 /*under construction*/
-@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque|Slabo+13px&display=swap&subset=latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono&display=swap');
 @import "pandakit.layout.css";
 @import "pandakit.color.css";
 @import "pandakit.button.css";
 @import "pandakit.media.css";
 @import "pandakit.typography.css";
+@import "pandakit.loader.css";
+@import "pandakit.input.css";
 
 /*
-	font-family: 'Slabo 13px', serif;
-	font-family: 'Darker Grotesque', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 */
 
 * {
@@ -20,14 +25,30 @@
     -webkit-overflow-scrolling: touch;
   }
 
-body, html { color: #38394B; 
+body, html { 
+  color: #38394B; 
 }
 
-p {
+header {
+  display: block;
+  height: auto;
+  min-height: 70px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1001;
+  transition: box-shadow cubic-bezier(.165, .84, .44, 1) .25s;
 }
 
-h1,h2,h3,h4,h5,h6{
-  
+header.sticky {
+  position: fixed;
+}
+
+div.form {
+  display: block;
+  height: auto;
+  width: 40%;
+  margin: 10% 30%;
 }
 
 /*vertical split screen*/
@@ -53,20 +74,15 @@ h1,h2,h3,h4,h5,h6{
   position: absolute;
   top: 50%;
   left: 50%;
- transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
   text-align: center;
 }
-
-
-.text-white { color: #ffffff; }
-.text-dark { color: #030015; }
-
 
 /*Smooth scroll*/
 .smooth-scroll{scroll-behavior: smooth;}
 
 /*hero image*/
-/*use style="background-iamge:url();" in your div to insert image*/
+/*use style="background-image:url();" in your div to insert image*/
 .hero-image {
   background-size: cover;
   background-position: center;

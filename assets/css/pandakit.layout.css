@@ -287,3 +287,17 @@
 .flip-card:hover .flip-card-inner-rotation {
   transform: rotateY(550deg);
 }
+
+/*return to the top*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 1.7%;
+    background:  #E12B00;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 35px;
+}
+#return-to-top:hover {
+    background:  #E12B00;
+}

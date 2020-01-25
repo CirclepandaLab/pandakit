@@ -5,33 +5,46 @@
 
 /* 
  * Compiled Modern Colors and names 
- * Background color
 **/
-.white { background-color: #ffffff; }
-.black { background-color: #000000; }
-.light-grey { background-color: #f2F3f7; }
-.tan { background-color: #fceed1; }
-.sand-tan { background-color: #e1b382; }
-.sand-tan-shadow { background-color: #c89666; }
-.coral-pink { background-color: #ff5e6c; }
-.sleuthe-yellow { background-color: #feb300; }
-.pink { background-color: #ffaaab; }
-.grassy-green { background-color: #9bc400; }
-.blue-water { background-color: #39a0ca; }
-.yellow { background-color: #ffde22; }
-.grey-blue-leaf { background-color: #4f5f76; }
-
-/*text color*/
-.white-text { color: #ffffff; }
-.black-text { color: #000000; }
-.light-grey-text { color: #f2F3f7; }
-.tan-text { color: #fceed1; }
-.sand-tan-text { color: #e1b382; }
-.sand-tan-shadow-text { color: #c89666; }
-.coral-pink-text { color: #ff5e6c; }
-.sleuthe-yellow-text { color: #feb300; }
-.pink-text { color: #ffaaab; }
-.grassy-green-text { color: #9bc400; }
-.blue-water-text { color: #39a0ca; }
-.yellow-text { color: #ffde22; }
-.grey-blue-leaf-text { color: #4f5f76; }
+:root {
+  --blue: #5E50F9;
+  --indigo: #6610f2;
+  --purple: #6a008a;
+  --pink: #E91E63;
+  --red: #f96868;
+  --orange: #f2a654;
+  --yellow: #f6e84e;
+  --green: #46c35f;
+  --teal: #58d8a3;
+  --cyan: #57c7d4;
+  --white: #ffffff;
+  --gray: #6c757d;
+  --gray-dark: #0f1531;
+  --blue: #5E50F9;
+  --indigo: #6610f2;
+  --purple: #6a008a;
+  --pink: #E91E63;
+  --red: #f96868;
+  --orange: #f2a654;
+  --yellow: #f6e84e;
+  --green: #46c35f;
+  --teal: #58d8a3;
+  --cyan: #57c7d4;
+  --white: #ffffff;
+  --gray: #434a54;
+  --gray-light: #aab2bd;
+  --gray-lighter: #e8eff4;
+  --gray-lightest: #e6e9ed;
+  --black: #000000;
+  --primary: #727cf5;
+  --secondary: #7987a1;
+  --success: #10b759;
+  --info: #66d1d1;
+  --warning: #fbbc06;
+  --danger: #ff3366;
+  --light: #ececec;
+  --dark: #282f3a;
+  --primary-muted: #b1cfec;
+  --info-muted: #7ee5e5;
+  --danger-muted: #f77eb9;
+}

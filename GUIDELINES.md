@@ -6,7 +6,10 @@
 
 ##How to contribute
 
--Forked the repo and clone it into your local machine.
+- Forked the repo and clone it into your local machine.
 - All pull request must to be associated with an issue.
--
+- Make pull request from your own forks.
+- Write proper change you have made in your commits.
+- Add issue number in your pull request,"eg-#12".
+- Always squash your commit so that it would look nicer.
 

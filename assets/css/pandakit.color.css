@@ -8,6 +8,7 @@
 **/
 :root {
   --blue: #5E50F9;
+  --blue-water: #39a0ca;
   --indigo: #6610f2;
   --purple: #6a008a;
   --pink: #E91E63;
@@ -15,18 +16,25 @@
   --orange: #f2a654;
   --yellow: #f6e84e;
   --green: #46c35f;
+  --grassy-green: #9bc400;
   --teal: #58d8a3;
+  --tan: #fceed1;
   --cyan: #57c7d4;
   --white: #ffffff;
   --gray: #6c757d;
   --gray-dark: #0f1531;
   --blue: #5E50F9;
+  --sand-tan: #e1b382;
+  --sand-tan-shadow: #c89666;
+  --grey-blue-leaf: #4f5f76;
   --indigo: #6610f2;
   --purple: #6a008a;
   --pink: #E91E63;
+  --coral-pink: #ff5e6c;
   --red: #f96868;
   --orange: #f2a654;
   --yellow: #f6e84e;
+  --sleuthe-yellow: #feb300;
   --green: #46c35f;
   --teal: #58d8a3;
   --cyan: #57c7d4;

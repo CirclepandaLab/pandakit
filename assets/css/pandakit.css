@@ -81,8 +81,8 @@ div.form {
 /*Smooth scroll*/
 .smooth-scroll{scroll-behavior: smooth;}
 
-/*hero image*/
-/*use style="background-image:url();" in your div to insert image*/
+/* hero image */
+/* use style="background-image:url();" in your div to insert image */
 .hero-image {
   background-size: cover;
   background-position: center;
@@ -90,6 +90,7 @@ div.form {
   height: 560px;
   position: relative; 
 }
+
 .hero-text {
   text-align: center;
   position: relative;
@@ -97,4 +98,9 @@ div.form {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
+}
+
+.center {
+  display: block;
+  margin: auto;
 }

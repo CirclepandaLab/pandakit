@@ -11,7 +11,4 @@ function scrollFunction() {
     scrollbutton.style.display = "none";
   }
 }
-document.getElementById("return-to-top").onclick = function() {topFunction()};
-function topFunction() {
- window.scrollTo({top: 0, behavior: 'smooth'});
-}
+document.getElementById("return-to-top").onclick = function() { window.scrollTo({top: 0, behavior: 'smooth'}) };

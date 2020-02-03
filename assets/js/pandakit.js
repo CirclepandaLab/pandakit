@@ -1,8 +1,9 @@
-/* Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
+/* 
+* Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
 */
 
-//return to the top
-var scrollbutton = document.getElementById("return-to-top");
+// Back to top
+let scrollbutton = document.getElementById("return-to-top");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -11,4 +12,15 @@ function scrollFunction() {
     scrollbutton.style.display = "none";
   }
 }
-document.getElementById("return-to-top").onclick = function() { window.scrollTo({top: 0, behavior: 'smooth'}) };
+
+// Smooth Scroll
+if (scrollbutton) {
+	scrollbutton.onclick = function() {
+		window.scrollTo({top: 0, behavior: 'smooth'}); 
+	};
+}
+
+// Progress Input
+let progress = document.querySelectorAll("div#progressbar > div[data-rate]");
+let setProgress = document.querySelectorAll("div#progressbar > div");
+setProgress[0].style.width = progress[0].dataset.rate + "%";

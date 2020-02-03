@@ -12,6 +12,7 @@
 @import "pandakit.typography.css";
 @import "pandakit.loader.css";
 @import "pandakit.input.css";
+@import "pandakit.slider.css";
 
 /*
 	font-family: 'Open Sans', sans-serif;
@@ -19,11 +20,20 @@
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    -webkit-overflow-scrolling: touch;
-  }
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+::selection {
+  background: var(--teal);
+  color: var(--white);
+}
+::-moz-selection {
+  background: var(--teal);
+  color: var(--white);
+}
 
 body, html { 
   color: #38394B; 

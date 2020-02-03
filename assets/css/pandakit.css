@@ -20,11 +20,20 @@
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    -webkit-overflow-scrolling: touch;
-  }
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+::selection {
+  background: var(--teal);
+  color: var(--white);
+}
+::-moz-selection {
+  background: var(--teal);
+  color: var(--white);
+}
 
 body, html { 
   color: #38394B; 

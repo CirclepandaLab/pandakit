@@ -43,6 +43,42 @@
 	border-radius: 4px;
 }
 
+.btn-primary {
+	border: 2px solid var(--primary);
+	background-color: var(--primary);
+	color: #FFFFFF;
+}
+
+.btn-secondary {
+	border: 2px solid var(--secondary);
+	background-color: var(--secondary);
+	color: #FFFFFF;
+}
+
+.btn-success {
+	border: 2px solid var(--success);
+	background-color: var(--success);
+	color: #FFFFFF;
+}
+
+.btn-info {
+	border: 2px solid var(--info);
+	background-color: var(--info);
+	color: #FFFFFF;
+}
+
+.btn-warning {
+	border: 2px solid var(--warning);
+	background-color: var(--warning);
+	color: #FFFFFF;
+}
+
+.btn-danger {
+	border: 2px solid var(--danger);
+	background-color: var(--danger);
+	color: #FFFFFF;
+}
+
 .btn-outline-primary, 
 .btn-outline-primary:hover,
 .btn-outline-primary:active,
@@ -55,14 +91,14 @@
 }
 
 .btn-outline-primary {
-	border: 2px solid #49a7db;
+	border: 2px solid var(--primary);
 	background-color: #ffffff;
-	color: #49A7DB;
+	color: var(--primary);
 }
 .btn-outline-primary:hover,
 .btn-outline-primary:active,
 .btn-outline-primary:focus {
-	background-color: #49A7DB;
+	background-color: var(--primary);
 	color: #ffffff;
 }
 
@@ -78,14 +114,14 @@
 }
 
 .btn-outline-secondary {
-	border: 2px solid #000000;
+	border: 2px solid var(--secondary);
 	background-color: #ffffff;
-	color: #000000;
+	color: var(--secondary);
 }
 .btn-outline-secondary:hover,
 .btn-outline-secondary:active,
 .btn-outline-secondary:focus {
-	background-color: #000000;
+	background-color: var(--secondary);
 	color: #ffffff;
 }
 
@@ -193,3 +229,5 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* Customize btn-* below — Reference pandakit.color.css for use of custom colors and extend if neccessary */

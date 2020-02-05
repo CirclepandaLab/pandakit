@@ -74,7 +74,147 @@ Have a bug or a feature request? Reach out to us on [hellopandakit@gmail.com](ma
 
 ## Documentation
 
-Coming soon.
+## Introduction
+
+Pandakit is a framework design for 21st Century web.Pandakit can easily be added to your project and provide fast and easiest way to modify your web pages to make them look more alluring and mesmerizing. 
+
+
+## Adding pandakit to your project.
+
+## CSS
+```
+<link rel="stylesheet" href="https://github.com/Chaitanyassr/pandakit-1/blob/master/assets/css/pandakit.css">```
+
+or
+
+<link rel="stylesheet" href="https://github.com/Chaitanyassr/pandakit-1/blob/master/assets/css/pandakit.min.css">
+```
+## JS
+```
+<script src="https://github.com/Chaitanyassr/pandakit-1/blob/master/assets/js/pandakit.js"></script>```
+
+or
+
+<script src="https://github.com/Chaitanyassr/pandakit-1/blob/master/assets/js/pandakit.min.js"></script>```
+```
+## getting started
+
+- [Layouts](#layouts)
+- [Buttons](#Buttons)
+- [Colors](#Colors)
+- [Inputs](#Inputs)
+- [Loader](#Loader)
+- [Media](#Media)
+- [Sliders](#Sliders)
+- [Typography](#Typography)
+
+
+## Layouts
+
+In layout we have grids, cards, smooth scroll, split screen, flip cards, hero image and return to the top. In grids we have classes like grid-1, grid-2, grid-3 upto 12.
+In cards we have normal card, flip cards and flip cards with super roatation ie 360 degree. it can be implemented by-
+
+cards
+```
+<div class="card">
+  <img src="img.png" alt="" style="">
+```
+
+flip card
+```
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img.png">
+    </div>
+    <div class="flip-card-back"> 
+```
+for 3-d flip card, use flip-card-3d instead of flip-card and for 360 degree roation use flip-card-inner-rotation in place of flip-card-inner.
+For back to the top feature, use #return-to-top id.
+
+Smooth scroll can be implemented by using .smooth-scroll class while
+
+For split screens
+```
+<div class="leftv">
+  <div class="centerev">
+    <img src="img.png" alt="">
+    <p>Some text.</p>
+  </div>
+</div>
+
+<div class="rightv">
+  <div class="centerev">
+    <img src="img.png" alt="">
+    <p>Some text here too.</p>
+  </div>
+</div>
+```
+Hero image
+
+For hero image, class hero-image and hero-text can be used.
+
+
+## Buttons
+
+In buttons, we have -
+```
+.btn
+.btn-sm
+.btn-md
+.btn-lg
+.btn-round
+.btn-square
+.btn-outline-primary(hover,active and focus)
+.btn-outline-secondary(hover,active and focus)
+.btn-outline-success(hover,active and focus)
+.btn-outline-warning(hover,active and focus)
+.btn-outline-danger(hover,active and focus)
+.btn-outline-info(hover,active and focus)
+.btn-shadow(with hover)
+.btn-disable
+```
+
+## Colors
+
+In colors we have -   --blue,--blue-water,--indigo,--red,--yellow,--green,--grassy-green,--tan,--white,--gray-dark,--sand-tan,--sand-tan-shadow,--grey-blue-leaf,--purple,--pink,--coral-pink,--orange,--sleuthe-yellow,--teal,--cyan,--gray,--gray-light,--gray-lighter,--gray-lightest,--black,--primary,--secondary,--success,--info,--warning,--danger,--light,--dark,--primary-muted,--info-muted,--danger-muted.
+
+
+## Inputs
+
+In Inputs we have progress bars that can be implemented by using below code in html file -
+```
+  <div id="progressbar">
+    <div data-rate="40"></div></div>
+```
+
+## Loaders
+
+We currently have six loaders. they can be implemented by writing below code in html - 
+```
+    <div class="loader-6"></div>
+```
+
+
+## Media
+
+
+## Sliders
+
+To implement sliders, you have to use slders class inside carousel. Currently we only have one slides class. Below is the example of html code.
+
+```
+    <div class="carousel">
+   <div class="slides">
+   </div>
+       </div>
+```
+
+
+## Typography
+
+In typography we have .text-center, .text-left, .text-right, .text-center, .text-left, .text-white, .text-black, .text-grey, .text-danger, .text-warning, .text-success, .text-info. 
+
 
 ## Contributing
 

@@ -20,7 +20,4 @@ if (scrollbutton) {
 	};
 }
 
-// Progress Input
-let progress = document.querySelectorAll("div#progressbar > div[data-rate]");
-let setProgress = document.querySelectorAll("div#progressbar > div");
-setProgress[0].style.width = progress[0].dataset.rate + "%";
+// window.onload = function(){ }

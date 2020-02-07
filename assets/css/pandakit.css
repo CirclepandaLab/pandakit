@@ -275,4 +275,33 @@ div.form {
 [tooltip][flow^="right"]:hover::after {
   animation: tooltips-horz 300ms ease-out forwards;
 }
+
+/* Alert */
+.alert {
+  display: block;
+  height: auto;
+  min-height: 30px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid currentcolor;
+  font-size: 16px;
+  padding: 5px 15px;
+  margin: 1px;
+}
+
+.alert.alert-success {
+  background-color: var(--success);
+  color: var(--white);
+}
+.alert.alert-warning {
+  background-color: var(--warning);
+  color: var(--white);
+}
+.alert.alert-danger {
+  background-color: var(--danger);
+  color: var(--white);
+}
+.alert.alert-info {
+  background-color: var(--info);
+  color: var(--white);
 }

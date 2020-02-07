@@ -33,7 +33,7 @@ progress[value]::-webkit-progress-bar {
   background-color: var(--gray-lightest);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.09) inset;
 }
-/* Progress bae */
+/* Progress bar */
 #progressbar {
   background-color: var(--gray-lightest);
   border-radius: 13px;

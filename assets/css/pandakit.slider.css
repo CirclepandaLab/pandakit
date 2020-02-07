@@ -2,3 +2,36 @@
  * Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
  * Under Construction
 **/
+/*slider 1*/
+.carousel {
+  width: 560px;
+  text-align: center;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar {
+  height: 12px;
+  width: 12px; 
+}
+.slides::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 12px;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 560px;
+  height: 260px;
+  margin-right: 5px;
+  border-radius: 10px;
+  background: #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

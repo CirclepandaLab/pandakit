@@ -87,20 +87,22 @@ div.form {
 /*vertical split screen*/
 .splitv {
   height: 100%;
-  width: 50%;
+  width: 48%;
   position: fixed;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding: 20px 10px 0;
 }
 
 .leftv {
   left: 0;
   background-color: var(--white);
+  color: var(--black);
 }
 
 .rightv {
   right: 0;
   background-color: var(--black);
+  color: var(--white);
 }
 
 .centerv {

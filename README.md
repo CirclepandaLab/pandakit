@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://github.com/CirclepandaLab/pandakit">
     <img src="https://raw.githubusercontent.com/CirclepandaLab/pandakit/master/logo.png" alt="Pandakit logo" width="130" height="130">
@@ -23,6 +22,8 @@ style="text-align:center;">Suggest features</a>
 
 
 ## Table of contents
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fprezine%2Fpandakit.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fprezine%2Fpandakit?ref=badge_shield)
+
 
 - [Quick start](#quick-start)
 - [What's included](#whats-included)
@@ -115,3 +116,5 @@ We're not big enough to need sponsors.
 ## Copyright and license
 
 Code released under the [MIT License](https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE).
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fprezine%2Fpandakit.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fprezine%2Fpandakit?ref=badge_large)

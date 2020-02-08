@@ -19,3 +19,6 @@ if (scrollbutton) {
 		window.scrollTo({top: 0, behavior: 'smooth'}); 
 	};
 }
+
+// window.onload = function(){ }
+}

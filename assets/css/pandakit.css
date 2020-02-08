@@ -42,8 +42,9 @@ body, html {
 header {
   display: block;
   height: auto;
-  min-height: 70px;
+  min-height: 40px;
   width: 100%;
+  padding: 10px 0;
   left: 0;
   top: 0;
   z-index: 1001;
@@ -52,6 +53,28 @@ header {
 
 header.sticky {
   position: fixed;
+}
+
+nav {
+  width: 50%;
+  text-align: center;
+}
+
+nav.left { float: left; }
+nav.right { float: right; }
+nav.center { float: center; }
+
+nav ul li {
+  display: inline-block;
+  padding: 4px 9px;
+}
+
+nav ul li a {
+  font-size: 15px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--white);
 }
 
 div.form {

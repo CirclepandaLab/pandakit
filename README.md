@@ -198,6 +198,8 @@ We currently have six loaders. they can be implemented by writing below code in 
 
 ## Media
 
+In media we have class grid-sm-1 to 12, grid-sm-pull-1 to 12, grid-sm-offset-1 to 12, grid-md-1 to 12, gird-md-pull-1 to 12, grid-md-offset-1 to 12, grid-lg-1 to 12, grid-lg-pull-1 to 12 and grid-lg-offset-1 to 12.
+
 
 ## Sliders
 

@@ -48,5 +48,4 @@ progress[value]::-webkit-progress-bar {
   background-color: var(--green);
   height: 20px;
   border-radius: 10px;
-
 }

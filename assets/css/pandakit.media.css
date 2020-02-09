@@ -14,6 +14,15 @@
 	.container {
 		width: 750px;
 	}
+	.splitv {
+	  width: 100%;
+	  position: fixed;
+	  overflow-x: hidden;
+	}
+	.clearfix {
+		padding: 0;
+		margin: 0 auto;
+	}
 	[class*="grid-"] {
 		width: 100%;
 	}
@@ -181,6 +190,10 @@
 @media only screen and (min-width: 992px) {
 	.container {
     	width: 970px;
+	}
+	.clearfix {
+		padding: 0;
+		margin: 0 auto;
 	}
 	.grid-md-1, .grid-md-2, .grid-md-3, .grid-md-4, .grid-md-5, .grid-md-6, .grid-md-7, .grid-md-8, .grid-md-9, .grid-md-10, .grid-md-11, .grid-md-12 {
     	float: left;

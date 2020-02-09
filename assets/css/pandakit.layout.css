@@ -21,6 +21,13 @@
 	clear: both;
 }
 
+.clearfix {
+  clear: both;
+  display: block;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
 /* For desktop: */
 .grid-1 {width: 8.33%;}
 .grid-2 {width: 16.66%;}

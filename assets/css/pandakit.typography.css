@@ -27,12 +27,15 @@ a {
 }
 .text-center {
 	text-align: center !important;
+	float: center;
 }
 .text-left {
 	text-align: left !important;
+	float: left;
 }
 .text-right {
 	text-align: right !important;
+	float: right;
 }
 .text-white { color: #FFFFFF; }
 .text-black { color: #000000; }
@@ -80,4 +83,3 @@ a {
 	transition: ease-in-out .2s;
 	transition-duration: .15s;
 }
-

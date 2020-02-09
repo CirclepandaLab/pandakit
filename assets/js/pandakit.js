@@ -20,9 +20,3 @@ if (scrollbutton) {
 	};
 }
 
-<<<<<<< HEAD
-// window.onload = function(){ }
-=======
-// window.onload = function(){ }
-}
->>>>>>> e2b833597365237df94f31e5050d4acffa2b0070

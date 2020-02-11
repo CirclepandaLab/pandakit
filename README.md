@@ -23,6 +23,7 @@ style="text-align:center;">Suggest features</a>
 
 ## Table of contents
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fprezine%2Fpandakit.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fprezine%2Fpandakit?ref=badge_shield)
+[![Open Source Helpers](https://www.codetriage.com/circlepandalab/pandakit/badges/users.svg)](https://www.codetriage.com/circlepandalab/pandakit)
 
 
 - [Quick start](#quick-start)
@@ -85,7 +86,7 @@ All HTML and CSS should conform to the [Code Guide](https://codeguide.co/), main
 
 Get updates on pandakit's development and chat with the project maintainers and community members.
 
-- Follow [@hellopandakit on Twitter](https://twitter.com/hellopandakit).
+- Follow [@circlepandalabs on Twitter](https://twitter.com/circlepandalabs).
 - Implementation help may be found at Stack Overflow (tagged [`pandakit`](https://stackoverflow.com/questions/tagged/pandakit)).
 
 

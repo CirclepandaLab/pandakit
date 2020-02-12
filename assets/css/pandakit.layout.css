@@ -211,9 +211,8 @@
 .mt-3 { margin-top: 14%; }
 .mt-4 { margin-top: 18%; }
 .mt-5 { margin-top: 22%; }
-<<<<<<< HEAD
 .mt-6 { margin-top: 28%; }
-=======
+
 
 /* Padding */
 .pt-1 { padding-top: 2%; }
@@ -272,7 +271,6 @@
   height: 300px;
   flex: 0 1 25%;
 }
->>>>>>> upstream/master
 
 /* Padding */
 .pt-1 { padding-top: 2%; }

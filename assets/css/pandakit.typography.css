@@ -8,18 +8,37 @@
  	font-family: 'Roboto Mono', monospace;
 */
 h1, h2, h3, h4, h5, h6, strong, b, i, p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 h1, h2, h3, h4, h5, h6, strong {
 	font-weight: 600;
 }
+h1 { font-size: 60px; }
+h2 { font-size: 46px; }
+h3 { font-size: 36px; }
+h4 { font-size: 28px; }
+h5 { font-size: 22px; }
+h6 { font-size: 16px; }
+
 p {
 	font-size: 16px;
+	line-height: 28px;
 	font-family: 'Open Sans', sans-serif;
 }
 a {
  	font-family: 'Roboto Mono', monospace;
 }
+
+.font-12 { font-size: 12px; }
+.font-14 { font-size: 14px; }
+.font-16 { font-size: 16px; }
+.font-18 { font-size: 18px; }
+.font-24 { font-size: 24px; }
+.font-30 { font-size: 30px; }
+.font-32 { font-size: 32px; }
+.font-36 { font-size: 36px; }
+.font-42 { font-size: 42px; }
+
 .text-center,
 .text-left,
 .text-right {
@@ -37,6 +56,9 @@ a {
 	text-align: right !important;
 	float: right;
 }
+.text-light { font-weight: 100; }
+.text-bold { font-weight: 600; }
+
 .text-white { color: #FFFFFF; }
 .text-black { color: #000000; }
 .text-grey { color: #454545; }
@@ -49,9 +71,8 @@ a {
 .link{
 	position: relative;
 	display: inline-flex;
-	font-size: 16px;
 	font-weight: 700;
-	color: var(--black);
+	color: var(--color);
 	text-decoration: none;
 	padding: 0 10px;
 	z-index: 1;
@@ -70,7 +91,7 @@ a {
 }
 
 .link:hover{
-	color: var(--white);
+	color: var(--black);
 }
 
 .link::before{
@@ -78,7 +99,7 @@ a {
 }
 
 .link:hover::before{
-	height: 20px;
+	height: 26px;
 	color: var(--white);
 	transition: ease-in-out .2s;
 	transition-duration: .15s;

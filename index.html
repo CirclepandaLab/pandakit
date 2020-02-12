@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Panda</title>
-	<meta charset="utf-8">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <meta content="" name="keywords">
-    <meta content="CirclepandaLabs" name="author">
-    <meta content="Pandakit description" name="description">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-	<link rel="stylesheet" type="text/css" href="assets/css/pandakit.css">
-</head>
-<body>
-	<header style="background-color: var(--black)">
-		<nav class="right">
-			<ul>
-				<li><a href="">Overview</a></li>
-				<li><a href="">Documentation</a></li>
-				<li><a href="">Examples</a></li>
-				<li><a href="">Blogs</a></li>
-				<li><a class="btn btn-square">Download v1.0</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="container clearfix">
-		<div class="docker">
-			<div class="splitv leftv">
-				<div class="grid-md-12 text-left">
-					<h1>Pandakit</h1>
-					<p> — a framework design for 21st Century web</p>
-					<a class="btn btn-lg btn-square btn-secondary">Get Started</a>
-				</div>
-			</div>
-			<div class="splitv rightv">
-				<h1>Pandakit</h1>
-					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-			</div>
-		</div>
-	</div>
 
-	<script src="assets/js/pandakit.js"></script>
+<head>
+    <title>jQuery Editable Select: example</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<script src="/js/lib/dummy.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">-->
+    <link rel="stylesheet" href="https://rawgit.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <style id="compiled-css" type="text/css">
+        html,
+        body {
+            height: 100%;
+            padding: 0 30px;
+            border: solid 1px #cfd6d9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="page-header">jQuery Editable Select <small>example</small></h1>
+    <select name="c" id="c" class="form-control">
+        <option value="1">Alfa Romeo</option>
+        <option value="2">Audi</option>
+    </select>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-editable-select@2.2.5/dist/jquery-editable-select.min.js"></script>
+    <script>
+		$('select').editableSelect();
+    	$(document).ready(function (){
+		    $("select#c").change(function(){
+		        var selectedCar = $(this).children("option:selected").val();
+		        alert("You have selected the car - " + selectedCar);
+		    });
+		});
+        // tell the embed parent frame the height of the content
+        if (window.parent && window.parent.parent) {
+            window.parent.parent.postMessage(["resultsFrame", {
+                height: document.body.getBoundingClientRect().height,
+                slug: "8vw34tuz"
+            }], "*")
+        }
+        // always overwrite window.name, in case users try to set it manually
+        window.name = "result"
+    </script>
 </body>
 </html>

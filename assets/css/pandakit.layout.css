@@ -238,8 +238,8 @@
 .float-left { float: left; }
 .float-right { float: right; }
 .float-center { float: center; }
-/*cards*/
 
+/*cards*/
 .card {
   display: flex;
   flex-wrap: wrap;
@@ -253,23 +253,39 @@
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
-/*flip card normal and 3d*/
-.flip-card-3d {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+/*flip card*/
+.flip-card {
+  background-color: transparent;
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  flex: 0 1 25%;
 }
-.flip-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.flip-card-n{
+  background-color: transparent;
   width: 300px;
   height: 300px;
-  flex: 0 1 25%;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-n:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
 }
 
 /* Padding */

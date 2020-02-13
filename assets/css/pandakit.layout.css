@@ -354,12 +354,23 @@ div.content {
   text-align: center;
 }
 
-/*nav*/
-.navbar {
+/*nav and navbar_onscrollhide*/
+#navbar #navbar_onscrollhide {
   overflow: hidden;
   background-color: #333;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+}
+#navbar #navbar_onscrollhide a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar #navbar_onscrollhide a:hover { 
+  color: #808080;
 }
 /*fullscreen side navigation hidden*/
 .side-nav-hidden {

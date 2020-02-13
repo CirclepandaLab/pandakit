@@ -33,6 +33,17 @@ function speak(m) {
 }
 
 //nav
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar_onscrollhide").style.top = "0";
+  } else {
+    document.getElementById("navbar_onscrollhide").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+//naviagation button hidden
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }

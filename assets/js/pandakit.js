@@ -31,3 +31,14 @@ function speak(m) {
   msg.lang = 'en-US';
   speechSynthesis.speak(msg);
 }
+
+//nav
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+document.getElementById("open").onclick = function() {openNav()};
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+document.getElementById("close").onclick = function() {openNav()};

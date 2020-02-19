@@ -4,18 +4,18 @@
  * Twitter : @PAniefiok; 
 */
 /*under construction*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Nunito|Roboto+Mono&display=swap');
 @import "pandakit.layout.css";
 @import "pandakit.color.css";
 @import "pandakit.button.css";
-@import "pandakit.media.css";
 @import "pandakit.typography.css";
 @import "pandakit.loader.css";
 @import "pandakit.input.css";
 @import "pandakit.slider.css";
+@import "pandakit.media.css";
 
 /*
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto Mono', monospace;
 */
 
@@ -34,9 +34,28 @@
   background: var(--teal);
   color: var(--white);
 }
-
+.no-select {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
 body, html { 
   color: #38394B; 
+}
+
+body::-webkit-scrollbar {
+  width: 2px;
+}
+ 
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+  outline: 2px solid var(--black);
 }
 
 header {
@@ -51,7 +70,8 @@ header {
   transition: box-shadow cubic-bezier(.165, .84, .44, 1) .25s;
 }
 
-header.sticky {
+header.sticky,
+footer.sticky {
   position: fixed;
 }
 
@@ -60,28 +80,36 @@ nav {
   text-align: center;
 }
 
-nav.left { float: left; }
-nav.right { float: right; }
-nav.center { float: center; }
-
 nav ul li {
   display: inline-block;
-  padding: 4px 9px;
+  padding: 4px 12px;
 }
 
-nav ul li a {
+nav ul li a,
+nav ul li a:hover,
+nav ul li a.active {
   font-size: 15px;
   font-family: 'Roboto Mono', monospace;
   font-weight: 600;
   text-decoration: none;
+  color: var(--gray-light);
+  transition: .2s ease-in-out;
+}
+
+nav ul li a:hover {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
   color: var(--white);
 }
 
-div.form {
+
+footer{
   display: block;
-  height: auto;
-  width: 40%;
-  margin: 10% 30%;
+  clear: both;
+  margin-top: auto;
+  height: 50px; 
+  width: 100%;
+  bottom: 0;
 }
 
 /*vertical split screen*/

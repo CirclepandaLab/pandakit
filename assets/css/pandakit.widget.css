@@ -1,0 +1,285 @@
+/* 
+ * Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
+ * Author : @Precious Tom;
+ * Twitter : @PAniefiok; 
+*/
+
+/* Smooth Scroll */
+.smooth-scroll{ scroll-behavior: smooth; }
+
+/* Tooltip */
+.tooltip {
+    display:inline-block;
+    position:relative;
+    border-bottom:1px dotted #666;
+    text-align:left;
+}
+/* Top */
+/* START TOOLTIP STYLES */
+[tooltip] {
+  position: relative;
+}
+[tooltip]::before,
+[tooltip]::after {
+  text-transform: none;
+  font-size: .9em;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+[tooltip]::before {
+  content: '';
+  border: 5px solid transparent;
+  z-index: 1001;
+}
+[tooltip]::after {
+  content: attr(tooltip);
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1ch 1.5ch;
+  border-radius: .3ch;
+  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+  background: #333;
+  color: #fff;
+  z-index: 1000;
+}
+/* Make the tooltips respond to hover */
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  display: block;
+}
+/* don't show empty tooltips */
+[tooltip='']::before,
+[tooltip='']::after {
+  display: none !important;
+}
+/* FLOW: TOP */
+[tooltip]:not([flow])::before,
+[tooltip][flow^="top"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: var(--black);
+}
+[tooltip]:not([flow])::after,
+[tooltip][flow^="top"]::after {
+  bottom: calc(100% + 5px);
+}
+[tooltip]:not([flow])::before,
+[tooltip]:not([flow])::after,
+[tooltip][flow^="top"]::before,
+[tooltip][flow^="top"]::after {
+  left: 50%;
+  transform: translate(-50%, -.5em);
+}
+/* FLOW: BOTTOM */
+[tooltip][flow^="bottom"]::before {
+  top: 100%;
+  border-top-width: 0;
+  border-bottom-color: #333;
+}
+[tooltip][flow^="bottom"]::after {
+  top: calc(100% + 5px);
+}
+[tooltip][flow^="bottom"]::before,
+[tooltip][flow^="bottom"]::after {
+  left: 50%;
+  transform: translate(-50%, .5em);
+}
+/* FLOW: LEFT */
+[tooltip][flow^="left"]::before {
+  top: 50%;
+  border-right-width: 0;
+  border-left-color: #333;
+  left: calc(0em - 5px);
+  transform: translate(-.5em, -50%);
+}
+[tooltip][flow^="left"]::after {
+  top: 50%;
+  right: calc(100% + 5px);
+  transform: translate(-.5em, -50%);
+}
+/* FLOW: RIGHT */
+[tooltip][flow^="right"]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #333;
+  right: calc(0em - 5px);
+  transform: translate(.5em, -50%);
+}
+[tooltip][flow^="right"]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translate(.5em, -50%);
+}
+/* KEYFRAMES */
+@keyframes tooltips-vert {
+  to {
+    opacity: .9;
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes tooltips-horz {
+  to {
+    opacity: .9;
+    transform: translate(0, -50%);
+  }
+}
+/* FX All The Things */ 
+[tooltip]:not([flow]):hover::before,
+[tooltip]:not([flow]):hover::after,
+[tooltip][flow^="top"]:hover::before,
+[tooltip][flow^="top"]:hover::after,
+[tooltip][flow^="bottom"]:hover::before,
+[tooltip][flow^="bottom"]:hover::after {
+  animation: tooltips-vert 300ms ease-out forwards;
+}
+[tooltip][flow^="left"]:hover::before,
+[tooltip][flow^="left"]:hover::after,
+[tooltip][flow^="right"]:hover::before,
+[tooltip][flow^="right"]:hover::after {
+  animation: tooltips-horz 300ms ease-out forwards;
+}
+
+/* Progress bar */
+progress::-webkit-progress-value { background-color: var(--purple); }
+progress {
+  display: block;
+  width: 100%;
+  height: 25px;
+  background-color: var(--white);
+}
+progress:not([value]),
+progress::-webkit-progress-bar {
+  border-radius: 4px;
+  border: 1px solid none;
+  background-color: var(--gray-lighter);
+}
+progress::-webkit-progress-value {
+  transition: width 0.5s;
+  border-radius: 4px;
+  border: 1px solid none;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: var(--gray-lightest);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.09) inset;
+}
+/* Progress bar */
+#progressbar {
+  background-color: var(--gray-lightest);
+  border-radius: 13px;
+  padding: 3px;
+  margin: 4px;
+  -webkit-box-shadow: inset 0 0 10px var(--gray-lighter);
+  	 -moz-box-shadow: inset 0 0 10px var(--gray-lighter);
+   		  box-shadow: inset 0 0 10px var(--gray-lighter);
+}
+#progressbar > div {
+  background-color: var(--green);
+  height: 20px;
+  border-radius: 10px;
+}
+
+/*return to the top*/
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 1.7%;
+  background:  #E12B00;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 35px;
+}
+#return-to-top:hover { background:  #E12B00; }
+
+/*cards*/
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.9s;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 50%;
+  flex: 0 1 25%;
+  background-color: var(--white);
+}
+.card:hover { box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5); }
+/*flip card normal and 3d*/
+.flip-card-3d {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  min-height: 300px;
+  width: 300px;
+  perspective: 1000px;
+  flex: 0 1 25%;
+}
+.flip-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  min-height: 300px;
+  width: 300px;
+  flex: 0 1 25%;
+  background-color: var(--white);
+}
+.flip-card-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+  flex: 0 1 25%; 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  color: black;
+}
+.flip-card-back {
+  color: black;
+  transform: rotateY(180deg);
+}
+.flip-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+/*flip card super rotation*/
+.flip-card-inner-rotation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+  flex: 0 1 25%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner-rotation {
+  transform: rotateY(550deg);
+}

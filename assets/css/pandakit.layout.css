@@ -10,24 +10,18 @@
   margin-right: auto;
   margin-left: auto;
 }
-
 .docker:before, 
 .docker:after {
   display: table;
   content: " ";
 }
-
-.docker:after {
-  clear: both;
-}
-
+.docker:after { clear: both; }
 .clearfix {
   clear: both;
   display: block;
   padding: 0 auto;
   margin: 0 auto;
 }
-
 /* For desktop: */
 .grid-1 {width: 8.33%;}
 .grid-2 {width: 16.66%;}
@@ -211,10 +205,7 @@
 .mt-3 { margin-top: 14%; }
 .mt-4 { margin-top: 18%; }
 .mt-5 { margin-top: 22%; }
-<<<<<<< HEAD
 .mt-6 { margin-top: 28%; }
-=======
->>>>>>> add font, margin & padding, & widget file
 
 /* Padding */
 .pt-1 { padding-top: 2%; }
@@ -240,7 +231,6 @@
 .float-left { float: left; }
 .float-right { float: right; }
 .float-center { float: center; }
-/*cards*/
 
 .card {
   display: flex;

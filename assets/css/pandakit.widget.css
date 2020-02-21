@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 
  * Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
  * Author : @Precious Tom;
@@ -283,3 +284,11 @@ progress[value]::-webkit-progress-bar {
 .flip-card:hover .flip-card-inner-rotation {
   transform: rotateY(550deg);
 }
+=======
+/**
+ * The main class for applying widget.
+ *
+ * @author    Precious Tom
+ * @copyright Precious Tom. All rights reserved.
+ */
+>>>>>>> upstream/master

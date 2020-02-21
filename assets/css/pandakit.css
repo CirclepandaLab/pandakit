@@ -43,16 +43,32 @@
 body, html { 
   color: #38394B; 
 }
+<<<<<<< HEAD
 body::-webkit-scrollbar {
   width: 2px;
 }
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
+=======
+
+body::-webkit-scrollbar {
+  width: 2px;
+}
+ 
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+>>>>>>> upstream/master
 body::-webkit-scrollbar-thumb {
   background-color: var(--black);
   outline: 2px solid var(--black);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
 header {
   display: block;
   height: auto;
@@ -64,6 +80,10 @@ header {
   z-index: 1001;
   transition: box-shadow cubic-bezier(.165, .84, .44, 1) .25s;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
 header.sticky,
 footer.sticky {
   position: fixed;
@@ -80,10 +100,18 @@ nav {
   width: 50%;
   text-align: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
 nav ul li {
   display: inline-block;
   padding: 4px 12px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
 nav ul li a,
 nav ul li a:hover,
 nav ul li a.active {
@@ -93,11 +121,30 @@ nav ul li a.active {
   text-decoration: none;
   color: var(--gray-light);
   transition: .2s ease-in-out;
+<<<<<<< HEAD
 }
 nav ul li a:hover {
   text-decoration: line-through;
   text-decoration-thickness: 3px;
   color: var(--white);
+=======
+}
+
+nav ul li a:hover {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  color: var(--white);
+}
+
+
+footer{
+  display: block;
+  clear: both;
+  margin-top: auto;
+  height: 50px; 
+  width: 100%;
+  bottom: 0;
+>>>>>>> upstream/master
 }
 
 /*vertical split screen*/

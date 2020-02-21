@@ -7,8 +7,12 @@
 	font-family: 'Open Sans', sans-serif;
  	font-family: 'Roboto Mono', monospace;
 */
-h1, h2, h3, h4, h5, h6, strong, b, i, p { font-family: 'Nunito', sans-serif; }
-h1, h2, h3, h4, h5, h6, strong { font-weight: 600; }
+h1, h2, h3, h4, h5, h6, strong, b, i, p {
+	font-family: 'Nunito', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, strong {
+	font-weight: 600;
+}
 h1 { font-size: 60px; }
 h2 { font-size: 46px; }
 h3 { font-size: 36px; }

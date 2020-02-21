@@ -211,7 +211,10 @@
 .mt-3 { margin-top: 14%; }
 .mt-4 { margin-top: 18%; }
 .mt-5 { margin-top: 22%; }
+<<<<<<< HEAD
 .mt-6 { margin-top: 28%; }
+=======
+>>>>>>> add font, margin & padding, & widget file
 
 /* Padding */
 .pt-1 { padding-top: 2%; }

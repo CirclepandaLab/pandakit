@@ -113,35 +113,6 @@ nav ul li a:hover {
 }
 
 /* Image — Filters */
-body{
-  margin: 1em;
-}
-
-img{
-  width: 600px;
-}
-
-figure{
-  display: inline-block;
-  margin: 0 auto;
-}
-
-.buttons{
-  display: block;
-  margin: 0 auto;
-}
-
-button{
-  display: inline-block;
-  border: none;
-  border-radius: 1px;
-  background-color: #777;
-  color: #f7f7f7;
-  padding: .4em .6em;
-  margin: .5em;
-}
-
-/*cssgram styles*/
 /* aden */
 .aden {
   -webkit-filter: hue-rotate(-20deg) contrast(.9) saturate(.85) brightness(1.2);

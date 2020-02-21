@@ -287,7 +287,7 @@ nav ul li a:hover {
 
 /* Image — * */
 img.round { border-radius: 50%; }
-img.responsive { 
+img.responsive {
   display: block;
   height: auto;
   width: 100%;

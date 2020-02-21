@@ -4,6 +4,7 @@
  * @author    Precious Tom
  * @copyright Precious Tom. All rights reserved.
  */
+
 /* Smooth Scroll */
 .smooth-scroll{ scroll-behavior: smooth; }
 
@@ -254,7 +255,7 @@ progress[value]::-webkit-progress-bar {
   height: 100%;
   backface-visibility: hidden;
 }
-.flip-card-front { color: black; }
+.flip-card-front { color: var(--black); }
 .flip-card-back {
   color: black;
   transform: rotateY(180deg);

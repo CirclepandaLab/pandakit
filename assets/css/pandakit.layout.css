@@ -10,24 +10,18 @@
   margin-right: auto;
   margin-left: auto;
 }
-
 .docker:before, 
 .docker:after {
   display: table;
   content: " ";
 }
-
-.docker:after {
-  clear: both;
-}
-
+.docker:after { clear: both; }
 .clearfix {
   clear: both;
   display: block;
   padding: 0 auto;
   margin: 0 auto;
 }
-
 /* For desktop: */
 .grid-1 {width: 8.33%;}
 .grid-2 {width: 16.66%;}
@@ -237,7 +231,6 @@
 .float-left { float: left; }
 .float-right { float: right; }
 .float-center { float: center; }
-/*cards*/
 
 .card {
   display: flex;

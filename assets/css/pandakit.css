@@ -40,35 +40,13 @@
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
 }
-body, html { 
-  color: #38394B; 
-}
-<<<<<<< HEAD
-body::-webkit-scrollbar {
-  width: 2px;
-}
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
-=======
-
-body::-webkit-scrollbar {
-  width: 2px;
-}
- 
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
- 
->>>>>>> upstream/master
+body, html { color: #38394B; }
+body::-webkit-scrollbar { width: 2px; }
+body::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
 body::-webkit-scrollbar-thumb {
   background-color: var(--black);
   outline: 2px solid var(--black);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
 header {
   display: block;
   height: auto;
@@ -80,10 +58,6 @@ header {
   z-index: 1001;
   transition: box-shadow cubic-bezier(.165, .84, .44, 1) .25s;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
 header.sticky,
 footer.sticky {
   position: fixed;
@@ -100,18 +74,10 @@ nav {
   width: 50%;
   text-align: center;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
 nav ul li {
   display: inline-block;
   padding: 4px 12px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
 nav ul li a,
 nav ul li a:hover,
 nav ul li a.active {
@@ -121,59 +87,15 @@ nav ul li a.active {
   text-decoration: none;
   color: var(--gray-light);
   transition: .2s ease-in-out;
-<<<<<<< HEAD
 }
 nav ul li a:hover {
   text-decoration: line-through;
   text-decoration-thickness: 3px;
   color: var(--white);
-=======
 }
-
-nav ul li a:hover {
-  text-decoration: line-through;
-  text-decoration-thickness: 3px;
-  color: var(--white);
-}
-
-
-footer{
-  display: block;
-  clear: both;
-  margin-top: auto;
-  height: 50px; 
-  width: 100%;
-  bottom: 0;
->>>>>>> upstream/master
-}
-
-/*vertical split screen*/
-.splitv {
-  height: 100%;
-  width: 48%;
-  position: fixed;
-  overflow-x: hidden;
-  padding: 20px 10px 0;
-}
-.leftv {
-  left: 0;
-  background-color: var(--white);
-  color: var(--black);
-}
-.rightv {
-  right: 0;
-  background-color: var(--black);
-  color: var(--white);
-}
-.centerv {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-}
-/* hero image */
-/* use style="background-image:url();" in your div to insert image */
+/* Hero image
+*  Use style="background-image:url();" in your div to insert image 
+**/
 .hero-image {
   background-size: cover;
   background-position: center;
@@ -187,39 +109,5 @@ footer{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--white);
-}
-
-.center {
-  display: block;
-  margin: auto;
-}
-/* Alert */
-.alert {
-  display: block;
-  height: auto;
-  min-height: 30px;
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid currentcolor;
-  font-size: 16px;
-  padding: 5px 15px;
-  margin: 1px;
-}
-
-.alert.alert-success {
-  background-color: var(--success);
-  color: var(--white);
-}
-.alert.alert-warning {
-  background-color: var(--warning);
-  color: var(--white);
-}
-.alert.alert-danger {
-  background-color: var(--danger);
-  color: var(--white);
-}
-.alert.alert-info {
-  background-color: var(--info);
   color: var(--white);
 }

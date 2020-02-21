@@ -298,7 +298,10 @@
 .float-left { float: left; }
 .float-right { float: right; }
 .float-center { float: center; }
-
+.center {
+  display: block;
+  margin: auto;
+}
 /* Sidebar */
 /* The side navigation menu */
 .sidebar {
@@ -334,4 +337,29 @@ div.content {
   margin-left: 270px;
   padding: 1px 16px;
   height: 1000px;
+}
+/*vertical split screen*/
+.splitv {
+  height: 100%;
+  width: 48%;
+  position: fixed;
+  overflow-x: hidden;
+  padding: 20px 10px 0;
+}
+.leftv {
+  left: 0;
+  background-color: var(--white);
+  color: var(--black);
+}
+.rightv {
+  right: 0;
+  background-color: var(--black);
+  color: var(--white);
+}
+.centerv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
 }

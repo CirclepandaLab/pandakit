@@ -56,6 +56,12 @@ a { font-family: 'Roboto Mono', monospace; }
 .text-warning { color: #BEAC38; }
 .text-success { color: #47E76C; }
 .text-info { color: #759BDC; }
+.text-lower { text-transform: lowercase; }
+.text-upper { text-transform: uppercase; }
+.text-strike { text-decoration: line-through; }
+.text-underline { text-decoration: underline; }
+.text-overline { text-decoration: overline; }
+
 .link{
 	position: relative;
 	display: inline-flex;

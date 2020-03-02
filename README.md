@@ -24,6 +24,7 @@ style="text-align:center;">Suggest features</a>
 ## Table of contents
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fprezine%2Fpandakit.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fprezine%2Fpandakit?ref=badge_shield)
 [![Open Source Helpers](https://www.codetriage.com/circlepandalab/pandakit/badges/users.svg)](https://www.codetriage.com/circlepandalab/pandakit)
+[![Build Status](https://travis-ci.org/CirclepandaLab/pandakit.svg?branch=master)](https://travis-ci.org/CirclepandaLab/pandakit)
 
 
 - [Quick start](#quick-start)

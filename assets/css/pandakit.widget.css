@@ -305,3 +305,28 @@ progress[value]::-webkit-progress-bar {
   background-color: var(--info);
   color: var(--white);
 }
+
+/*to do list*/
+#todoinput{
+  width: 75%;
+  height: 50px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+ol {
+  background: #3399ff;
+  padding: 20px;
+}
+ol li {
+  background: #cce5ff;
+  margin: 5px;
+}
+h1{
+  color: green;
+  text-align: center;
+}

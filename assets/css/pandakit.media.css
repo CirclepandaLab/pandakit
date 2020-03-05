@@ -2,6 +2,14 @@
  * Licensed under MIT (https://github.com/CirclepandaLab/pandakit/blob/master/LICENSE)
  * Under Construction
 **/
+@media screen and (max-height: 450px) {
+  .side-nav-hidden a {font-size: 20px}
+  .side-nav-hidden .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

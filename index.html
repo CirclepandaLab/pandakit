@@ -14,10 +14,27 @@
 	<div class="container">
 		<div class="docker">
 			<div class="grid-md-4 grid-sm-4 clearfix">
-				<input type="date" value="2017-01-01" >
+				<form id="todo">
+					<div class="grid-md-12 pb-1">
+						<h1>TO DO LIST</h1>
+					</div>
+					<!--todoinput,click,and todolist are the main id for todo list -->
+					<div class="grid-md-12 pb-1">
+						<input id="todoinput">
+					</div>
+					<div class="grid-md-12 pb-1">
+						<button type="button" id="click" class="btn btn-primary click">ADD</button>
+						<button type="button" id="cross" class="btn btn-secondary click">DELETE</button>
+					</div>
+					<div class="grid-md-12">
+						<ol id="todolist"></ol>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
+
+
 
 <script src="./assets/js/pandakit.js"></script>
 </body>

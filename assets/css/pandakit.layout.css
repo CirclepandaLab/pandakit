@@ -365,7 +365,8 @@ div.content {
   display: block;
   transition: 0.3s;
 }
-.side-nav-hidden a:hover, .side-nav-hidden a:focus {
+.side-nav-hidden a:hover, 
+.side-nav-hidden a:focus {
   color: #f1f1f1;
 }
 .side-nav-hidden .closebtn {
@@ -374,14 +375,7 @@ div.content {
   right: 45px;
   font-size: 60px;
 }
-@media screen and (max-height: 450px) {
-  .side-nav-hidden a {font-size: 20px}
-  .side-nav-hidden .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
+
 /*side navigation button*/
 .Sidenav a {
   position: absolute;
@@ -394,9 +388,7 @@ div.content {
   color: white;
   border-radius: 0 5px 5px 0;
 }
-.Sidenav a:hover {
-  left: 0;
-}
+.Sidenav a:hover { left: 0; }
 .sidenavbutton {
   top: 140px;
   background-color: #f44336;

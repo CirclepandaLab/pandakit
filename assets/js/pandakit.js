@@ -32,7 +32,7 @@ function speak(m) {
   speechSynthesis.speak(msg);
 }
 
-//nav
+// Nav
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
@@ -43,19 +43,24 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
-//naviagation button hidden
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-document.getElementById("open").onclick = function() {openNav()};
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-document.getElementById("close").onclick = function() {openNav()};
+// Naviagation button hidden
+window.onload = function(){ 
+  if (document.getElementById("myNav") !== null) {
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    document.getElementById("open").onclick = function() {openNav()};
 
-//to-do list
-//item addition script
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    document.getElementById("close").onclick = function() {openNav()};
+  }
+};
+
+// To-do list
+// Item addition script
 function todo(){
   var item  = document.getElementById('todoinput').value
   var text = document.createTextNode(item)
@@ -64,7 +69,7 @@ function todo(){
   document.getElementById("todolist").appendChild(newItem)
 }
 document.getElementById("click").onclick = function() {todo()};
-//item deletion script
+// Item deletion script
 function del(){
   var item1 = document.getElementById('todolist');
   item1.removeChild(item1.childNodes[0]);

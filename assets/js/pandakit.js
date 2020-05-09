@@ -68,7 +68,12 @@ function todo(){
   newItem.appendChild(text)
   document.getElementById("todolist").appendChild(newItem)
 }
-document.getElementById("click").onclick = function() {todo()};
+document.getElementById("click").onclick = function() {
+if(document.querySelector('#todoinput').value === ''){
+    alert('Please enter a task.')
+  }
+  else{todo()}
+};
 // Item deletion script
 function del(){
   var item1 = document.getElementById('todolist');
